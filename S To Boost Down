@@ -8,34 +8,16 @@ public class Player : MonoBehaviour
     private BoxCollider2D boxCollider2D;
     [SerializeField] private LayerMask platformsLayerMask;
 
-    private int jumpCount;
-    public int jumpCountMax;
-
     void Start()
     {
         rb2d = rb2d = GetComponent<Rigidbody2D> ();
         boxCollider2D = transform.GetComponent<BoxCollider2D>();
-        jumpCountMax = 2;
     }
 
     void Update()
     {
-        if (IsGrounded()) {
-            jumpCount = 1;
-        }
-
-        if(Input.GetKey(KeyCode.UpArrow)) {
-            if (IsGrounded()) {
-                rb2d.velocity = Vector2.up * jumpPower;
-
-            } else {
-                if(Input.GetKeyDown(KeyCode.UpArrow)) {
-                    if (jumpCount < jumpCountMax) {
-                        rb2d.velocity = Vector2.up * jumpPower;
-                        jumpCount++;
-                    }
-                }
-            }
+        if(Input.GetKeyDown("s") && !IsGrounded()) {
+            rb2d.velocity = Vector2.down * jumpPower;
         }
     }
 
