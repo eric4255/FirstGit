@@ -1,4 +1,4 @@
-## Eric Trofimchik FirstGit
+## Eric Trofimchik
 
 The AD movement is [here](https://eric4255.github.io/FirstGit/unity/AD) <br>
 The Complete is [here](https://eric4255.github.io/FirstGit/unity/Complete) <br>
