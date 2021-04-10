@@ -1,4 +1,4 @@
 ## Eric Trofimchik FirstGit
 
-[Header Link](/eric4255/FirstGit/blob/Main/index.html)
+[Header Link](/eric4255/FirstGit/Main/index.html)
 
